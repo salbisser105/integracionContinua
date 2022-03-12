@@ -41,6 +41,9 @@ public class ProtobootappApplication {
     @GetMapping("/cubo")
     public String cubo(@RequestParam(value = "numero", defaultValue = "0") Double numero) {
         this.calculadora = new Calculadora();
-        return String.format("El cubo de %f es %f", numero, this.calculadora.cubo(numero));
+        //looking for an error in the pipe line, changing the return.
+        return String.format("El cubo de %f es %f", numeo, this.calculadora.cubo(numero));
+
+        // return String.format("El cubo de %f es %f", numero, this.calculadora.cubo(numero));
     }
 }
