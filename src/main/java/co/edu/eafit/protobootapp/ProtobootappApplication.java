@@ -46,5 +46,5 @@ public class ProtobootappApplication {
         //Fixing the forced error in the line before.
         return String.format("El cubo de %f es %f", numero, this.calculadora.cubo(numero));
     }
-   
+   //Random comment
 }
