@@ -42,9 +42,9 @@ public class ProtobootappApplication {
     public String cubo(@RequestParam(value = "numero", defaultValue = "0") Double numero) {
         this.calculadora = new Calculadora();
         //looking for an error in the pipe line, changing the return.
-        return String.format("El cubo de %f es %f", numeo, this.calculadora.cubo(numero));
+        // return String.format("El cubo de %f es %f", numeo, this.calculadora.cubo(numero));
         //Fixing the forced error in the line before.
-        // return String.format("El cubo de %f es %f", numero, this.calculadora.cubo(numero));
+        return String.format("El cubo de %f es %f", numero, this.calculadora.cubo(numero));
     }
    
 }
